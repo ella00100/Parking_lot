@@ -1,5 +1,45 @@
 ﻿# Parking_lot
 
+## Project Introduction
+
+이 프로젝트는 두 가지 서비스로 구성되어 있습니다.
+
+### 웹 사이트 서비스
+웹 사이트 서비스는 사용자가 목적지를 입력하면 주변 주차장의 위치와 전체 주차 면수, 잔여 면수를 보여주는 서비스를 제공합니다. 사용자는 웹 사이트를 통해 원하는 목적지를 입력하면, 해당 위치 주변에 있는 주차장들의 정보를 지도를 통해 확인할 수 있습니다.
+
+### 슬랙 ChatBot 서비스
+슬랙 ChatBot 서비스는 사용자의 메세지에서 위치 키워드를 추출하여 해당 위치에서의 최적의 주차장에 대한 안내를 제공합니다. 사용자는 슬랙 메세지로 요청을 하면, 해당 위치에서의 최적의 주차장에 대한 정보를 슬랙으로 안내해줍니다. 이를 통해 사용자는 편리하게 주차장 정보를 얻을 수 있습니다.
+
+## demo
+
+- web
+
+[web_demo_f 파일 참조]
+
+- chatbot
+
+ ![chatbot_demo](https://github.com/ella00100/Parking_lot/assets/103167624/25928fdf-57c2-4bc1-ae4d-6f734b15f62a)
+
+## Tech Stack
+
+### web site
+- python
+- cloud 9
+- AWS Lightsail 
+- django
+- javaScript
+- BootStrap
+- HTML
+- CSS
+
+### chatBot
+- python
+- cloud 9
+- AWS DynamoDB
+- AWS EC2 
+- slack
+
+## How to Run
 웹페이지를 돌리기위해 다음과 같은 작업을 실시해 주어야한다.
 
 1. pip install django, pip install requests 등 import한 모듈을 전부 깔아준다
@@ -13,4 +53,11 @@
 6. 마지막으로 config 디렉토리에 sttings.py 파일의 29번쨰 줄 allowed_hosts에 본인이 서비스 할 ip를 추가해주어야 한다.
 만약 로컬에서 돌라는거면 127.0.0.1만 있어도 된다.
 
-7. 이제 서버를 돌릴때 터미널창에 python manage.py runserver 명령어를 치고 포트 8000번으로 접속하면 된다
+7. 이제 서버를 돌릴때 터미널창에 python manage.py runserver 명령어를 치고 포트 8000번으로 접속한다. 
+
+## Aurhors
+- 윤서영 (Yun Seo Young) - Frontend & Server
+- 김민규 (Kim Min Gyu) - Data Analysis
+- 권성준 (Kwon Sung Jun) - Backend & Server
+- 김건유 (Kim Geon Yu) - Backend
+- 전진욱 (Jeon Jin Wook) - Planner
